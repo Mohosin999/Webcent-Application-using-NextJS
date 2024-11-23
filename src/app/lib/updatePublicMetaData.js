@@ -1,3 +1,5 @@
+import { revalidatePath } from "next/cache";
+
 /**
  * Function for update credit
  *
@@ -20,6 +22,7 @@ export async function updateCredit(credit, userId) {
     }
 
     const data = await response.json();
+    revalidatePath("/profile");
     console.log("Credit updated:", data);
   } catch (error) {
     console.error("Error updating credit:", error);

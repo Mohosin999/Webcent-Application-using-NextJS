@@ -32,6 +32,12 @@ const Navbar = () => {
           >
             Dashboard
           </Link>
+          <Link
+            href="/profile"
+            className="hover:text-yellow-400 transition duration-200"
+          >
+            User Profile
+          </Link>
 
           <SignedOut>
             <SignInButton mode="modal" />
