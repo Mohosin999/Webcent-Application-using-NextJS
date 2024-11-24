@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Extracting the YouTube API key from environment variables
-const key = process.env.YOUTUBE_API_KEY;
+const key = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
 
 /**
  * Fetches all items from a YouTube playlist using the YouTube Data API.
